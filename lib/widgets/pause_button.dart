@@ -5,7 +5,10 @@ class PauseButtonWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: FlatButton(
-        child: Text("Приостановить", style: TextStyle(fontSize: 20),),
+        child: Text(
+          "Приостановить",
+          style: TextStyle(fontSize: 20),
+        ),
         onPressed: () {},
       ),
     );

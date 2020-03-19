@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class InfoWidget extends StatelessWidget {
@@ -7,7 +6,11 @@ class InfoWidget extends StatelessWidget {
     return Container(
       alignment: Alignment.centerRight,
       child: IconButton(
-        icon: Icon(Icons.info_outline, color: Colors.black, size: 30,),
+        icon: Icon(
+          Icons.info_outline,
+          color: Colors.black,
+          size: 30,
+        ),
       ),
     );
   }

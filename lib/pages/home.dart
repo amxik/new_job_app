@@ -27,7 +27,7 @@ class HomePage extends StatelessWidget {
             Container(
               child: Text(
                 "Нажимая кнопку «Приостановить» \n"
-                    "вы остановите отсчет времени программы",
+                "вы остановите отсчет времени программы",
                 style: TextStyle(fontSize: 17),
                 textAlign: TextAlign.center,
               ),
@@ -35,7 +35,7 @@ class HomePage extends StatelessWidget {
             Container(
               child: Text(
                 "2019 - 2020 \n"
-                    "Lorem ipsum dolor sit amet",
+                "Lorem ipsum dolor sit amet",
                 style: TextStyle(fontSize: 15),
                 textAlign: TextAlign.center,
               ),

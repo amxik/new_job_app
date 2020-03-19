@@ -17,10 +17,7 @@ class CircleWidget extends StatelessWidget {
           ),
           Stack(
             alignment: Alignment.center,
-            children: <Widget>[
-              _clipRectWidget(),
-              _timerWidget()
-            ],
+            children: <Widget>[_clipRectWidget(), _timerWidget()],
           ),
           _statusWidget()
         ],
@@ -28,7 +25,7 @@ class CircleWidget extends StatelessWidget {
     );
   }
 
-  Widget _clipRectWidget(){
+  Widget _clipRectWidget() {
     return Container(
       height: 180,
       child: ClipRect(
@@ -49,48 +46,42 @@ class CircleWidget extends StatelessWidget {
     );
   }
 
-  Widget _timerWidget(){
+  Widget _timerWidget() {
     return Container(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: <Widget>[
           Container(
               child: Text(
-                "Часы / Минуты",
-                style: TextStyle(fontSize: 20),
-              )),
+            "Часы / Минуты",
+            style: TextStyle(fontSize: 20),
+          )),
           Container(
               child: Text(
-                "      04:29     +",
-                style: TextStyle(fontSize: 45),
-              )),
+            "      04:29     +",
+            style: TextStyle(fontSize: 45),
+          )),
           Container(
               child: Text(
-                "48",
-                style: TextStyle(fontSize: 20),
-              ))
+            "48",
+            style: TextStyle(fontSize: 20),
+          ))
         ],
       ),
     );
   }
 
-  Widget _statusWidget(){
+  Widget _statusWidget() {
     return Container(
       child: RichText(
         text: TextSpan(
             text: "СТАТУС: ",
-            style: TextStyle(fontSize: 25, color: Colors.black, fontStyle: FontStyle.italic),
+            style: TextStyle(
+                fontSize: 25, color: Colors.black, fontStyle: FontStyle.italic),
             children: [
-              TextSpan(
-                  text: "АКТИВНО",
-                  style: TextStyle(
-                      color: Colors.green
-                  )
-              )
-            ]
-        ),
+              TextSpan(text: "АКТИВНО", style: TextStyle(color: Colors.green))
+            ]),
       ),
     );
   }
-
 }
